@@ -215,7 +215,7 @@
             class="cardContainer w-[650px] h-[387px] absolute z-3"
             :class="{ clicked: showRightModule }"
           />
-          <div class="cardStack">
+          <div>
             <div
               class="w-[650px] h-[387px] bg-amber absolute top-0 ml-[10px] mt-[10px] z-2"
             ></div>
@@ -284,6 +284,10 @@ const toggleVideo = () => {
 <style scoped>
 .cardContainer {
   transition: transform 0.2s ease-in-out;
+}
+
+.cardContainer:hover {
+  transform: translateY(-20px);
 }
 
 .cardContainer.clicked {
