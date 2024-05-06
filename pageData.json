@@ -17,10 +17,10 @@
     },
     "staggeredVideo": {
       "laptop": {
-        "video": "./videos/notToScale/ntsLintro.mp4"
+        "src": "https://firebasestorage.googleapis.com/v0/b/showcasetemplate-5ecab.appspot.com/o/notToScale%2Fvideos%2FntsLintro.mp4?alt=media&token=049c5d0a-fe04-40ee-b834-c1c35eb20152"
       },
       "mobile": {
-        "video": "./videos/notToScale/ntsMintro.mp4"
+        "src": "https://firebasestorage.googleapis.com/v0/b/showcasetemplate-5ecab.appspot.com/o/notToScale%2Fvideos%2FntsMIntro.mp4?alt=media&token=a9825f71-fd38-45b3-b5f9-04e0ab3db3fc"
       }
     },
     "scrollGallery": {
@@ -65,10 +65,10 @@
           }
         ],
         "laptopVideo": {
-          "src": "./videos/notToScale/ntsLWork.mp4"
+          "src": "https://firebasestorage.googleapis.com/v0/b/showcasetemplate-5ecab.appspot.com/o/notToScale%2Fvideos%2FntsLWork.mp4?alt=media&token=54939b73-7b27-4590-8209-f1d1c494ca46"
         },
         "mobileVideo": {
-          "src": "./videos/notToScale/ntsMWork.mp4"
+          "src": "https://firebasestorage.googleapis.com/v0/b/showcasetemplate-5ecab.appspot.com/o/notToScale%2Fvideos%2FntsMWork.mp4?alt=media&token=55498508-6340-4008-9307-9c8ce354197d"
         }
       },
       "rightCard": {
@@ -93,10 +93,10 @@
           }
         ],
         "laptopVideo": {
-          "src": "./videos/notToScale/ntsLDirectors.mp4"
+          "src": "https://firebasestorage.googleapis.com/v0/b/showcasetemplate-5ecab.appspot.com/o/notToScale%2Fvideos%2FntsLDirectors.mp4?alt=media&token=87563626-703b-4f3c-9046-153a16e6655c"
         },
         "mobileVideo": {
-          "src": "./videos/notToScale/ntsMDirectors.mp4"
+          "src": "https://firebasestorage.googleapis.com/v0/b/showcasetemplate-5ecab.appspot.com/o/notToScale%2Fvideos%2FntsMDirectors.mp4?alt=media&token=0d06074f-6853-4ccf-8223-46bff2534c76"
         }
       }
     },
@@ -146,26 +146,26 @@
     "borderVideo": {
       "intro": {
         "laptop": {
-          "video": "./videos/afterAugust/aaLIntro.mp4"
+          "src": "https://firebasestorage.googleapis.com/v0/b/showcasetemplate-5ecab.appspot.com/o/afterAugust%2Fvideos%2FaaLIntro.mp4?alt=media&token=436d8921-52b7-4781-b3bf-33ead9d12d66"
         },
         "mobile": {
-          "video": "./videos/afterAugust/aaMIntro.mp4"
+          "src": "https://firebasestorage.googleapis.com/v0/b/showcasetemplate-5ecab.appspot.com/o/afterAugust%2Fvideos%2FaaMIntro.mp4?alt=media&token=defdc079-87fe-466d-a34a-14693983dd42"
         }
       },
       "story": {
         "laptop": {
-          "video": "./videos/afterAugust/aaLStory.mp4"
+          "src": "https://firebasestorage.googleapis.com/v0/b/showcasetemplate-5ecab.appspot.com/o/afterAugust%2Fvideos%2FaaLStory.mp4?alt=media&token=cd69da61-3f50-4972-bb9e-138a91b02cd8"
         },
         "mobile": {
-          "video": "./videos/afterAugust/aaMStory.mp4"
+          "src": "https://firebasestorage.googleapis.com/v0/b/showcasetemplate-5ecab.appspot.com/o/afterAugust%2Fvideos%2FaaMStory.mp4?alt=media&token=492f5825-ae1f-4ee5-8f5e-03b7e091863f"
         }
       },
       "outro": {
         "laptop": {
-          "video": "./videos/afterAugust/aaLOutro.mp4"
+          "src": "https://firebasestorage.googleapis.com/v0/b/showcasetemplate-5ecab.appspot.com/o/afterAugust%2Fvideos%2FaaLOutro.mp4?alt=media&token=b4af5133-d3b1-4a5c-ad09-57982f52933f"
         },
         "mobile": {
-          "video": "./videos/afterAugust/aaMOutro.mp4"
+          "src": "https://firebasestorage.googleapis.com/v0/b/showcasetemplate-5ecab.appspot.com/o/afterAugust%2Fvideos%2FaaMOutro.mp4?alt=media&token=285f4406-c7a5-4103-bf98-c84b5a9724a4"
         }
       }
     },
