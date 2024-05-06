@@ -1,0 +1,6 @@
+.not-to-scale {
+  --color-primary: rgb(55, 46, 57);
+  --color-secondary: rgb(244, 240, 232);
+  --color-primary-variant: rgb(85, 70, 89);
+  --color-secondary-variant: rgb(218, 205, 178);
+}

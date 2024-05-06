@@ -1,0 +1,250 @@
+{
+  "notToScale": {
+    "hero": {
+      "title": "Not to Scale",
+      "teaser": "Filmmakers and storytellers. A digital showcase",
+      "award": {
+        "name": "Creative Circle 2024 Award Submission",
+        "image": {
+          "src": "./svg/notToScale/creativeCircle.svg",
+          "alt": ""
+        }
+      },
+      "cta": {
+        "url": "https://nottoscale.tv/home/",
+        "name": "view live site"
+      }
+    },
+    "staggeredVideo": {
+      "laptop": {
+        "video": "./videos/notToScale/ntsLintro.mp4"
+      },
+      "mobile": {
+        "video": "./videos/notToScale/ntsMintro.mp4"
+      }
+    },
+    "scrollGallery": {
+      "laptopImages": [
+        {
+          "src": "./images/notToScale/laptop/landingpage.png",
+          "alt": ""
+        },
+        { "src": "./images/notToScale/laptop/deliverthewin.png", "alt": "" }
+      ],
+      "mobileImages": [
+        {
+          "src": "./images/notToScale/mobile/landingpage.png",
+          "alt": ""
+        },
+        {
+          "src": "./images/notToScale/mobile/deliverthewin.png",
+          "alt": ""
+        }
+      ]
+    },
+    "cardModule": {
+      "leftCard": {
+        "src": "./images/notToScale/workCard.png",
+        "alt": ""
+      },
+      "leftModule": {
+        "laptopImages": [
+          {
+            "src": "./images/notToScale/laptop/workpage.png",
+            "alt": ""
+          }
+        ],
+        "mobileImages": [
+          {
+            "src": "./images/notToScale/mobile/workpageM.png",
+            "alt": ""
+          },
+          {
+            "src": "./images/notToScale/mobile/searchM.png",
+            "alt": ""
+          }
+        ],
+        "laptopVideo": {
+          "src": "./videos/notToScale/ntsLWork.mp4"
+        },
+        "mobileVideo": {
+          "src": "./videos/notToScale/ntsMWork.mp4"
+        }
+      },
+      "rightCard": {
+        "src": "./images/notToScale/directorsCard.png",
+        "alt": ""
+      },
+      "rightModule": {
+        "laptopImages": [
+          {
+            "src": "./images/notToScale/laptop/directorspage.png",
+            "alt": ""
+          }
+        ],
+        "mobileImages": [
+          {
+            "src": "./images/notToScale/mobile/directorspageM.png",
+            "alt": ""
+          },
+          {
+            "src": "./images/notToScale/mobile/directorsfilterM.png",
+            "alt": ""
+          }
+        ],
+        "laptopVideo": {
+          "src": "./videos/notToScale/ntsLDirectors.mp4"
+        },
+        "mobileVideo": {
+          "src": "./videos/notToScale/ntsMDirectors.mp4"
+        }
+      }
+    },
+    "imageSlider": {
+      "topRowImages": [
+        { "src": "./images/notToScale/adultswim.png", "alt": "" },
+        { "src": "./images/notToScale/trade.png", "alt": "" },
+        { "src": "./images/notToScale/anniversary.png", "alt": "" },
+        { "src": "./images/notToScale/sushi.png", "alt": "" }
+      ],
+      "bottomRowImages": [
+        { "src": "./images/notToScale/dating.png", "alt": "" },
+        { "src": "./images/notToScale/trail.png", "alt": "" },
+        { "src": "./images/notToScale/cheese.png", "alt": "" },
+        { "src": "./images/notToScale/deliver.png", "alt": "" },
+        { "src": "./images/notToScale/mukbang.png", "alt": "" }
+      ]
+    },
+    "longImage": {
+      "laptop": {
+        "src": "./images/notToScale/laptop/longImage.png",
+        "alt": ""
+      },
+      "mobile": {
+        "src": "./images/notToScale/mobile/longImage.png",
+        "alt": ""
+      }
+    }
+  },
+
+  "afterAugust": {
+    "hero": {
+      "title": "UNDP Women",
+      "teaser": "After August 2021, everything changed for women and girls in Afghanistan. This site documents the stories of Afghan women and girls, written in their own words. Don't let their fates disappear into the sand...",
+      "award": {
+        "name": "The Webby Awards 2023 Award submission",
+        "image": {
+          "src": "./svg/afterAugust/webby.svg",
+          "alt": ""
+        }
+      },
+      "cta": {
+        "url": "https://www.afteraugust.org/",
+        "name": "view live site"
+      }
+    },
+    "borderVideo": {
+      "intro": {
+        "laptop": {
+          "video": "./videos/afterAugust/aaLIntro.mp4"
+        },
+        "mobile": {
+          "video": "./videos/afterAugust/aaMIntro.mp4"
+        }
+      },
+      "story": {
+        "laptop": {
+          "video": "./videos/afterAugust/aaLStory.mp4"
+        },
+        "mobile": {
+          "video": "./videos/afterAugust/aaMStory.mp4"
+        }
+      },
+      "outro": {
+        "laptop": {
+          "video": "./videos/afterAugust/aaLOutro.mp4"
+        },
+        "mobile": {
+          "video": "./videos/afterAugust/aaMOutro.mp4"
+        }
+      }
+    },
+    "imageSlider": {
+      "topRowImages": [
+        { "src": "./images/afterAugust/womanOne.png", "alt": "" },
+        { "src": "./images/afterAugust/womanTwo.png", "alt": "" },
+        { "src": "./images/afterAugust/womanThree.png", "alt": "" },
+        { "src": "./images/afterAugust/womanFour.png", "alt": "" }
+      ],
+      "bottomRowImages": [
+        { "src": "./images/afterAugust/womanFive.png", "alt": "" },
+        { "src": "./images/afterAugust/womanSix.png", "alt": "" },
+        { "src": "./images/afterAugust/womanSeven.png", "alt": "" },
+        { "src": "./images/afterAugust/womanEight.png", "alt": "" },
+        { "src": "./images/afterAugust/womanNine.png", "alt": "" }
+      ]
+    },
+    "scrollGallery": {
+      "laptopImages": [
+        {
+          "src": "./images/afterAugust/laptop/scrollOne.png",
+          "alt": ""
+        },
+        { "src": "./images/afterAugust/laptop/scrollTwo.png", "alt": "" },
+        { "src": "./images/afterAugust/laptop/scrollThree.png", "alt": "" }
+      ],
+      "mobileImages": [
+        {
+          "src": "./images/afterAugust/mobile/scrollOne.png",
+          "alt": ""
+        },
+        {
+          "src": "./images/afterAugust/mobile/scrollTwo.png",
+          "alt": ""
+        },
+        {
+          "src": "./images/afterAugust/mobile/scrollThree.png",
+          "alt": ""
+        },
+        {
+          "src": "./images/afterAugust/mobile/scrollFour.png",
+          "alt": ""
+        }
+      ]
+    },
+    "imageGallery": {
+      "laptopImages": [
+        {
+          "src": "./images/afterAugust/quoteOne.png",
+          "alt": ""
+        },
+        { "src": "./images/afterAugust/quoteTwo.png", "alt": "" },
+        { "src": "./images/afterAugust/quoteThree.png", "alt": "" },
+        {
+          "src": "./images/afterAugust/quoteFour.png",
+          "alt": ""
+        },
+        { "src": "./images/afterAugust/quoteFive.png", "alt": "" },
+        { "src": "./images/afterAugust/quoteSix.png", "alt": "" }
+      ],
+      "mobileImages": [
+        {
+          "src": "./images/afterAugust/quoteOne.png",
+          "alt": ""
+        },
+        { "src": "./images/afterAugust/quoteTwo.png", "alt": "" },
+        { "src": "./images/afterAugust/quoteThree.png", "alt": "" },
+        {
+          "src": "./images/afterAugust/quoteFour.png",
+          "alt": ""
+        },
+        { "src": "./images/afterAugust/quoteFive.png", "alt": "" },
+        { "src": "./images/afterAugust/quoteSix.png", "alt": "" }
+      ],
+      "cta": {
+        "name": "show more",
+        "isActive": "show less"
+      }
+    }
+  }
+}
