@@ -1,14 +1,18 @@
 <template>
   <div class="c-image-slider">
     <!-- Top row slider -->
-    <div class="overflow-x-auto max-w-full flex gap-x-[64px]">
+    <div
+      class="overflow-x-auto max-w-full flex gap-x-[64px] pt-[45px] pb-[50px]"
+    >
       <div v-for="(image, index) in topRowImages" :key="index">
         <img :src="image.src" :alt="image.alt" class="w-[655px]" />
       </div>
     </div>
 
     <!-- Bottom row slider -->
-    <div class="overflow-x-auto max-w-full flex gap-x-[64px]">
+    <div
+      class="overflow-x-auto max-w-full flex gap-x-[64px] pt-[45px] pb-[50px]"
+    >
       <div v-for="(image, index) in bottomRowImages" :key="index">
         <img :src="image.src" :alt="image.alt" class="w-[655px]" />
       </div>
