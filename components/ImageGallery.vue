@@ -3,7 +3,7 @@
     <div>
       <!-- MOBIL -->
       <div v-if="isMobile" class="flex justify-center">
-        <div>
+        <div class="grid gap-[49px]">
           <div
             v-for="(image, index) in mobileImages.slice(0, sliceAmount)"
             :key="index"

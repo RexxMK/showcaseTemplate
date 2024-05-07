@@ -6,7 +6,7 @@
       "award": {
         "name": "Creative Circle 2024 Award Submission",
         "image": {
-          "src": "./svg/notToScale/creativeCircle.svg",
+          "src": "./svg/creativeCircle.svg",
           "alt": ""
         }
       },
@@ -115,6 +115,24 @@
         { "src": "./images/notToScale/mukbang.png", "alt": "" }
       ]
     },
+    "imageGallery": {
+      "mobileImages": [
+        { "src": "./images/notToScale/adultswim.png", "alt": "" },
+        { "src": "./images/notToScale/trade.png", "alt": "" },
+        { "src": "./images/notToScale/anniversary.png", "alt": "" },
+        { "src": "./images/notToScale/trail.png", "alt": "" },
+        { "src": "./images/notToScale/cheese.png", "alt": "" },
+        { "src": "./images/notToScale/deliver.png", "alt": "" },
+        { "src": "./images/notToScale/sushi.png", "alt": "" },
+        { "src": "./images/notToScale/dating.png", "alt": "" },
+        { "src": "./images/notToScale/mukbang.png", "alt": "" }
+      ],
+      "laptopImages": [],
+      "cta": {
+        "name": "show more",
+        "isActive": "show less"
+      }
+    },
     "longImage": {
       "laptop": {
         "src": "./images/notToScale/laptop/longImage.png",
@@ -134,7 +152,7 @@
       "award": {
         "name": "The Webby Awards 2023 Award submission",
         "image": {
-          "src": "./svg/afterAugust/webby.svg",
+          "src": "./svg/webby.svg",
           "alt": ""
         }
       },

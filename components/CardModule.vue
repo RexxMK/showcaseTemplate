@@ -256,17 +256,45 @@ const showRightModule = ref(false);
 
 // Funktionen tager en parameter 'side', som angiver, om det er venstre eller højre modul, der skal "toggles".
 // Afhængigt af 'side' ændres værdierne af 'showLeftModule' og 'showRightModule', og sørger for, at kun ét af modulerne er synligt ad gangen.
+// const toggleModule = (side) => {
+//   if (side === "left") {
+//     showLeftModule.value = !showLeftModule.value;
+//     if (showLeftModule.value && showRightModule.value) {
+//       showRightModule.value = false;
+//     }
+//   } else if (side === "right") {
+//     showRightModule.value = !showRightModule.value;
+//     if (showRightModule.value && showLeftModule.value) {
+//       showLeftModule.value = false;
+//     }
+//   }
+// };
 const toggleModule = (side) => {
+  let elementToScrollTo;
+
   if (side === "left") {
     showLeftModule.value = !showLeftModule.value;
     if (showLeftModule.value && showRightModule.value) {
       showRightModule.value = false;
+    }
+    // Rul kun hvis venstre modul er åbent
+    if (showLeftModule.value) {
+      elementToScrollTo = document.querySelector(".c-card-module");
     }
   } else if (side === "right") {
     showRightModule.value = !showRightModule.value;
     if (showRightModule.value && showLeftModule.value) {
       showLeftModule.value = false;
     }
+    // Rul kun hvis højre modul er åbent
+    if (showRightModule.value) {
+      elementToScrollTo = document.querySelector(".c-card-module");
+    }
+  }
+
+  // Rul kun hvis elementet er defineret
+  if (elementToScrollTo) {
+    elementToScrollTo.scrollIntoView({ behavior: "smooth" });
   }
 };
 

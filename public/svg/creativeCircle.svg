@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.46 80">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        stroke: #372e39;
+        stroke-miterlimit: 10;
+        stroke-width: 7.14px;
+      }
+
+      .cls-3 {
+        fill: #372e39;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g id="circle_award" data-name="circle award">
+        <circle class="cls-2" cx="70.17" cy="37.7" r="29.56"/>
+        <rect class="cls-3" x="40.72" y="69.29" width="58.91" height="10.7"/>
+      </g>
+      <rect class="cls-1" width="140.46" height="80"/>
+    </g>
+  </g>
+</svg>

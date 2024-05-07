@@ -6,7 +6,7 @@
       <VideoStaggered v-bind="{ ...page.staggeredVideo }" />
       <ScrollGallery v-bind="{ ...page.scrollGallery }" />
       <CardModule v-bind="{ ...page.cardModule }" />
-      <ImageSlider v-bind="{ ...page.imageSlider }" />
+      <ImageGallery v-bind="{ ...page.imageGallery }" :sliceAmount="3" />
       <ImageLong v-bind="{ ...page.longImage }" />
     </div>
 

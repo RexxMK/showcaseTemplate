@@ -5,9 +5,10 @@
         v-if="award.image"
         :src="award.image.src"
         :alt="award.image.alt"
-        class="w-[43px]"
+        class="w-[100px] shadow-none"
       />
-      <div v-if="award.name" class="max-w-20ch text-center pt-[16px]">
+
+      <div v-if="award.name" class="max-w-22ch text-center pt-[23px]">
         {{ award.name }}
       </div>
     </div>
@@ -39,6 +40,7 @@
       <button
         v-if="cta"
         class="w-[213px] h[48px] rounded-50 uppercase text-[16px] cursor-pointer"
+        @click="openUrlInNewTab"
       >
         {{ cta.name }}
         <span
@@ -53,8 +55,7 @@
 </template>
 
 <script setup>
-defineProps({
-  url: String,
+const props = defineProps({
   title: String,
   teaser: String,
   award: Object,
@@ -70,4 +71,13 @@ onMounted(() => {
     isMobile.value = true;
   }
 });
+
+const url = ref(props.cta.url);
+
+const openUrlInNewTab = () => {
+  const url = typeof props.cta === "object" ? props.cta.url : null; // Man får kun URL'en, hvis cta er et objekt
+  if (url) {
+    window.open(url, "_blank"); // Åbner URL'en i en ny fane
+  }
+};
 </script>
