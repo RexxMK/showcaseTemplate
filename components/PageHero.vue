@@ -27,11 +27,14 @@
       <!-- LAPTOP -->
       <div v-else class="pt-[206px]">
         <div v-if="title" class="text-[110px]">{{ title }}</div>
-        <div
-          v-if="teaser"
-          class="text-[28px] text-center pt-[18px] pb-[62px] max-w-45ch"
-        >
-          {{ teaser }}
+        <div class="flex justify-center">
+          <div
+            v-if="teaser"
+            class="text-[28px] text-center pt-[18px] pb-[62px] max-w-45ch"
+            :class="teaserMaxWidth"
+          >
+            {{ teaser }}
+          </div>
         </div>
       </div>
 
@@ -60,6 +63,10 @@ const props = defineProps({
   teaser: String,
   award: Object,
   cta: Object,
+  teaserMaxWidth: {
+    type: String,
+    default: "max-w-45ch", // Standard max-width
+  },
 });
 
 // 'ref' bruges til at lave en reaktiv variabel 'isMobile', der som udgangspunkt er falsk.

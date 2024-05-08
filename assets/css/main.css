@@ -1,8 +1,14 @@
-.not-to-scale {
-  --color-primary: rgb(55, 46, 57);
-  --color-secondary: rgb(244, 240, 232);
-  --color-primary-variant: rgb(85, 70, 89);
-  --color-secondary-variant: rgb(218, 205, 178);
+.notToScale {
+  --primary: rgb(55, 46, 57);
+  --secondary: rgb(244, 240, 232);
+  --primary-variant: rgb(85, 70, 89);
+  --secondary-variant: rgb(218, 205, 178);
+}
+
+.afterAugust {
+  --primary: rgb(225, 225, 225);
+  --secondary: rgb(18, 18, 18);
+  --variant: rgb(85, 180, 104);
 }
 
 *::-webkit-scrollbar {

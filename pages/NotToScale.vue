@@ -12,7 +12,7 @@
 
     <!-- LAPTOP -->
     <div v-else class="flex flex-col gap-y-[360px]">
-      <PageHero v-bind="{ ...page.hero }" />
+      <PageHero v-bind="{ ...page.hero }" :teaserMaxWidth="teaserMaxWidth" />
       <VideoStaggered v-bind="{ ...page.staggeredVideo }" />
       <ScrollGallery v-bind="{ ...page.scrollGallery }" />
       <CardModule v-bind="{ ...page.cardModule }" />
@@ -40,6 +40,8 @@ const props = defineProps({
   title: String,
   content: String,
 });
+
+const teaserMaxWidth = ref("max-w-24ch");
 
 // 'ref' bruges til at lave en reaktiv variabel 'isMobile', der som udgangspunkt er falsk.
 const isMobile = ref(false);
