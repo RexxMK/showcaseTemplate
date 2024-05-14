@@ -1,5 +1,5 @@
 <template>
-  <div class="c-page-hero">
+  <div class="c-page-hero text-secondary">
     <div class="c-page-hero_award flex flex-col items-center mt-[30px]">
       <img
         v-if="award.image"
@@ -16,21 +16,24 @@
       <!-- MOBIL -->
       <div v-if="isMobile" class="flex flex-col items-center pt-[99px]">
         <div v-if="title" class="text-[40px]">{{ title }}</div>
-        <div
-          v-if="teaser"
-          class="text-[20px] text-center pt-[36px] pb-[105px] max-w-45ch"
-        >
-          {{ teaser }}
+        <div class="flex justify-center">
+          <div
+            v-if="teaser"
+            class="text-[20px] text-center pt-[36px] pb-[105px]"
+            :class="teaserMaxWidth"
+          >
+            {{ teaser }}
+          </div>
         </div>
       </div>
 
       <!-- LAPTOP -->
       <div v-else class="pt-[206px]">
-        <div v-if="title" class="text-[110px]">{{ title }}</div>
+        <div v-if="title" class="header-lg text-[110px]">{{ title }}</div>
         <div class="flex justify-center">
           <div
             v-if="teaser"
-            class="text-[28px] text-center pt-[18px] pb-[62px] max-w-45ch"
+            class="body-lg text-[28px] text-center pt-[18px] pb-[62px]"
             :class="teaserMaxWidth"
           >
             {{ teaser }}
@@ -39,19 +42,25 @@
       </div>
 
       <!-- KNAP -->
-      <!-- skal pakkes ind som link -->
       <button
         v-if="cta"
-        class="w-[213px] h[48px] rounded-50 uppercase text-[16px] cursor-pointer"
+        class="w-[213px] h[48px] rounded-50 uppercase text-[16px] cursor-pointer bg-detail text-detail-text"
         @click="openUrlInNewTab"
       >
         {{ cta.name }}
-        <span
-          ><img
-            src="/assets/svg/icon-open-in-new.svg"
-            alt=""
+        <span>
+          <svg
+            viewBox="0 0 12 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
             class="w-[11.5px] absolute ml-[14px]"
-        /></span>
+          >
+            <path
+              d="M0.166504 12.3337V0.666992H5.74248V1.6964H1.19592V11.3042H10.8038V6.75768H11.8332V12.3337H0.166504ZM4.43856 8.78219L3.71797 8.0616L10.0832 1.6964H7.37239V0.666992H11.8332V5.12778H10.8038V2.41699L4.43856 8.78219Z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
       </button>
     </div>
   </div>

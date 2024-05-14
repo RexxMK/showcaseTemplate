@@ -200,6 +200,17 @@
         { "src": "./images/afterAugust/womanSeven.png", "alt": "" },
         { "src": "./images/afterAugust/womanEight.png", "alt": "" },
         { "src": "./images/afterAugust/womanNine.png", "alt": "" }
+      ],
+      "mobileImages": [
+        { "src": "./images/afterAugust/womanOne.png", "alt": "" },
+        { "src": "./images/afterAugust/womanTwo.png", "alt": "" },
+        { "src": "./images/afterAugust/womanThree.png", "alt": "" },
+        { "src": "./images/afterAugust/womanFour.png", "alt": "" },
+        { "src": "./images/afterAugust/womanFive.png", "alt": "" },
+        { "src": "./images/afterAugust/womanSix.png", "alt": "" },
+        { "src": "./images/afterAugust/womanSeven.png", "alt": "" },
+        { "src": "./images/afterAugust/womanEight.png", "alt": "" },
+        { "src": "./images/afterAugust/womanNine.png", "alt": "" }
       ]
     },
     "scrollGallery": {

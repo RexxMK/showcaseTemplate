@@ -3,7 +3,7 @@
     <!-- MOBIL -->
     <div v-if="isMobile">
       <div class="flex justify-center">
-        <div v-if="mobile.src" class="b-solid b-blue">
+        <div v-if="mobile.src" class="b-solid b-detail">
           <video
             ref="videoPlayer"
             :src="mobile.src"
@@ -20,7 +20,7 @@
     <!-- LAPTOP -->
     <div v-else>
       <div class="flex justify-center">
-        <div v-if="laptop.src" class="b-solid b-2 b-blue">
+        <div v-if="laptop.src" class="b-solid b-2 b-detail">
           <video
             ref="videoPlayer"
             :src="laptop.src"

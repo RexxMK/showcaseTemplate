@@ -19,26 +19,30 @@
             :class="{ clicked: showLeftModule }"
           />
           <div
-            class="w-[325px] h-[194px] bg-amber absolute top-0 ml-[8px] mt-[8px] z-2"
+            class="w-[325px] h-[194px] bg-secondary-variant absolute ml-[8px] mt-[8px] z-2"
           ></div>
           <div
-            class="w-[325px] h-[194px] bg-black absolute top-0 ml-[16px] mt-[16px] z-1"
+            class="w-[325px] h-[194px] bg-secondary absolute ml-[16px] mt-[16px] z-1"
           ></div>
         </div>
       </div>
 
       <!-- Venstre modul -->
-      <div class="z-5 mt-[206px] overflow-hidden">
-        <div v-if="showLeftModule" class="w-full h-auto bg-red">
+      <div class="z-5 mt-[206px] overflow-hidden sliderShadow">
+        <div v-if="showLeftModule" class="w-full h-auto">
           <div class="flex gap-x-[13px] overflow-x-auto">
             <div v-for="(image, index) in leftModule.mobileImages" :key="index">
-              <img :src="image.src" :alt="image.alt" class="w-auto h-[583px]" />
+              <img
+                :src="image.src"
+                :alt="image.alt"
+                class="w-auto h-[583px] sliderShadow"
+              />
             </div>
             <div v-if="leftModule.mobileVideo">
               <video
                 ref="videoPlayer"
                 :src="leftModule.mobileVideo.src"
-                class="w-auto h-[583px] cursor-pointer"
+                class="w-auto h-[583px] cursor-pointer sliderShadow"
                 @click="toggleVideo"
                 autoplay
                 muted
@@ -59,29 +63,33 @@
             :class="{ clicked: showRightModule }"
           />
           <div
-            class="w-[325px] h-[194px] bg-amber absolute top-0 ml-[8px] mt-[8px] z-2"
+            class="w-[325px] h-[194px] bg-secondary-variant absolute ml-[8px] mt-[8px] z-2"
           ></div>
           <div
-            class="w-[325px] h-[194px] bg-black absolute top-0 ml-[16px] mt-[16px] z-1"
+            class="w-[325px] h-[194px] bg-secondary absolute ml-[16px] mt-[16px] z-1"
           ></div>
         </div>
       </div>
 
       <!-- Højre modul -->
-      <div class="z-5 mt-[206px] overflow-hidden">
-        <div v-if="showRightModule" class="w-full h-auto bg-blue">
+      <div class="z-5 mt-[206px] overflow-hidden sliderShadow">
+        <div v-if="showRightModule" class="w-full h-auto">
           <div class="flex gap-x-[13px] overflow-x-auto">
             <div
               v-for="(image, index) in rightModule.mobileImages"
               :key="index"
             >
-              <img :src="image.src" :alt="image.alt" class="w-[317px] h-auto" />
+              <img
+                :src="image.src"
+                :alt="image.alt"
+                class="w-[317px] h-auto sliderShadow"
+              />
             </div>
             <div v-if="rightModule.mobileVideo">
               <video
                 ref="videoPlayer"
                 :src="rightModule.mobileVideo.src"
-                class="w-auto h-[583px] cursor-pointer"
+                class="w-auto h-[583px] cursor-pointer sliderShadow"
                 @click="toggleVideo"
                 autoplay
                 muted
@@ -110,10 +118,10 @@
             :class="{ clicked: showLeftModule }"
           />
           <div
-            class="w-[650px] h-[387px] bg-amber absolute top-0 ml-[10px] mt-[10px] z-2"
+            class="w-[650px] h-[387px] bg-secondary-variant absolute top-0 ml-[10px] mt-[10px] z-2"
           ></div>
           <div
-            class="w-[650px] h-[387px] bg-black absolute top-0 ml-[20px] mt-[20px] z-1"
+            class="w-[650px] h-[387px] bg-secondary absolute top-0 ml-[20px] mt-[20px] z-1"
           ></div>
         </div>
       </div>
@@ -123,7 +131,7 @@
         <!-- Venstre modul -->
         <div
           v-if="showLeftModule"
-          class="w-[1449px] h-[882px] bg-red absolute overflow-y-auto"
+          class="w-[1449px] h-[882px] bg-secondary-variant absolute overflow-y-auto"
         >
           <div class="flex flex-col items-center mt-[80px]">
             <div class="flex justify-center gap-x-[68px]">
@@ -146,7 +154,7 @@
             </div>
 
             <div v-if="leftModule.laptopVideo" class="pt-[232px] pb-[80px]">
-              <div class="w-[1100] h-[42px] bg-black"></div>
+              <div class="w-[1100] h-[42px] bg-secondary"></div>
               <video
                 ref="videoPlayer"
                 :src="leftModule.laptopVideo.src"
@@ -163,7 +171,7 @@
         <!-- Højre modul -->
         <div
           v-if="showRightModule"
-          class="w-[1449px] h-[882px] bg-blue absolute overflow-y-auto"
+          class="w-[1449px] h-[882px] bg-secondary-variant absolute overflow-y-auto"
         >
           <div class="flex flex-col items-center mt-[80px]">
             <div class="flex justify-center gap-x-[68px]">
@@ -186,7 +194,7 @@
             </div>
 
             <div v-if="rightModule.laptopVideo" class="pt-[232px] pb-[80px]">
-              <div class="w-[1100] h-[42px] bg-black"></div>
+              <div class="w-[1100] h-[42px] bg-secondary"></div>
               <video
                 ref="videoPlayer"
                 :src="rightModule.laptopVideo.src"
@@ -217,10 +225,10 @@
           />
           <div>
             <div
-              class="w-[650px] h-[387px] bg-amber absolute top-0 ml-[10px] mt-[10px] z-2"
+              class="w-[650px] h-[387px] bg-secondary-variant absolute top-0 ml-[10px] mt-[10px] z-2"
             ></div>
             <div
-              class="w-[650px] h-[387px] bg-black absolute top-0 ml-[20px] mt-[20px] z-1"
+              class="w-[650px] h-[387px] bg-secondary absolute top-0 ml-[20px] mt-[20px] z-1"
             ></div>
           </div>
         </div>

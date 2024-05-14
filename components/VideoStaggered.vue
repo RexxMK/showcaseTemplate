@@ -5,7 +5,7 @@
       <div class="flex justify-center">
         <div
           v-if="mobile.src"
-          class="bg-amber w-[320px] h-[612px] pt-[10px] pl-[11px]"
+          class="bg-primary-variant w-[320px] h-[612px] pt-[10px] pl-[11px]"
         >
           <video
             ref="videoPlayer"
@@ -25,7 +25,7 @@
       <div class="flex justify-center">
         <div
           v-if="laptop.src"
-          class="bg-amber w-[1070px] h-[630px] pt-[30px] pl-[30px]"
+          class="bg-primary-variant w-[1070px] h-[630px] pt-[30px] pl-[30px]"
         >
           <video
             ref="videoPlayer"

@@ -22,6 +22,4 @@ const currentTheme = computed(() => {
   // Tilføj flere betingelser for andre sider efter behov
 });
 </script>
-<style>
-@import url(/assets/css/main.css);
-</style>
+<style></style>

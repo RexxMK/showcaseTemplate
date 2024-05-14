@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="notToScale bg-primary">
     <!-- MOBIL -->
-    <div v-if="isMobile" class="flex flex-col gap-y-[165px]">
-      <PageHero v-bind="{ ...page.hero }" />
+    <div v-if="isMobile" class="flex flex-col gap-y-[165px] pb-[165px]">
+      <PageHero v-bind="{ ...page.hero }" :teaserMaxWidth="teaserMaxWidth" />
       <VideoStaggered v-bind="{ ...page.staggeredVideo }" />
       <ScrollGallery v-bind="{ ...page.scrollGallery }" />
       <CardModule v-bind="{ ...page.cardModule }" />
@@ -11,7 +11,7 @@
     </div>
 
     <!-- LAPTOP -->
-    <div v-else class="flex flex-col gap-y-[360px]">
+    <div v-else class="flex flex-col gap-y-[360px] pb-[360px]">
       <PageHero v-bind="{ ...page.hero }" :teaserMaxWidth="teaserMaxWidth" />
       <VideoStaggered v-bind="{ ...page.staggeredVideo }" />
       <ScrollGallery v-bind="{ ...page.scrollGallery }" />
@@ -35,22 +35,42 @@ import ImageSlider from "../components/ImageSlider.vue";
 
 const page = ref(pageData.notToScale);
 
-const props = defineProps({
-  theme: Object, // Modtag temaet som en prop
-  title: String,
-  content: String,
-});
-
 const teaserMaxWidth = ref("max-w-24ch");
 
 // 'ref' bruges til at lave en reaktiv variabel 'isMobile', der som udgangspunkt er falsk.
-const isMobile = ref(false);
+// const isMobile = ref(false);
+// // 'onMounted' hooket bruges til køre en funktion, når komponentet er blev sat ind.
+// // Funktionen kontrollerer vinduets bredde. Hvis bredden er mindre end 768 pixels, så opdateres 'isMobile' til sand.
+// onMounted(() => {
+//   if (window.innerWidth < 768) {
+//     isMobile.value = true;
+//   }
+// });
+
+// Koden i linje 54-63 indeholder den funktion der skal bruges i løsningen generelt.
+// Jeg har valgt at bruge en anden funktion til at aflæse viewportstørrelsen af siden i forbindelse med hovedopgaven
+// På den måde sker skiftet til mobilvisningen automatisk uden der er behov for reload af siden
+
+// 'ref' bruges til at lave en reaktiv variabel 'isMobile', der som udgangspunkt er falsk.
+// const isMobile = ref(false);
+
 // 'onMounted' hooket bruges til køre en funktion, når komponentet er blev sat ind.
 // Funktionen kontrollerer vinduets bredde. Hvis bredden er mindre end 768 pixels, så opdateres 'isMobile' til sand.
+// onMounted(() => {
+//   if (window.innerWidth < 768) {
+//     isMobile.value = true;
+//   }
+// });
+
+const isMobile = ref(false);
+
+const updateIsMobile = () => {
+  isMobile.value = window.innerWidth < 768;
+};
+
 onMounted(() => {
-  if (window.innerWidth < 768) {
-    isMobile.value = true;
-  }
+  updateIsMobile(); // Opdaterer ved start, baseret på vinduets bredde
+  window.addEventListener("resize", updateIsMobile); // Lytter efter vinduesændringer
 });
 </script>
 

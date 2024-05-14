@@ -1,22 +1,47 @@
 <template>
   <div class="c-image-slider">
-    <!-- Top row slider -->
-    <div
-      class="flex gap-x-[64px] pt-[45px] pb-[50px]"
-      :style="{ transform: `translateX(${topRowTranslate}px)` }"
-    >
-      <div v-for="(image, index) in topRowImages" :key="index">
-        <img :src="image.src" :alt="image.alt" class="w-[855px]" />
+    <!-- MOBIL -->
+    <div v-if="isMobile">
+      <div class="flex gap-x-[16px] overflow-auto h-auto sliderShadow">
+        <template v-for="(image, index) in mobileImages" :key="index">
+          <img
+            :src="image.src"
+            :alt="image.alt"
+            class="w-[330px] sliderShadow"
+          />
+        </template>
       </div>
+      <div></div>
     </div>
 
-    <!-- Bottom row slider -->
-    <div
-      class="flex gap-x-[64px] pt-[45px] pb-[50px]"
-      :style="{ transform: `translateX(${bottomRowTranslate}px)` }"
-    >
-      <div v-for="(image, index) in bottomRowImages" :key="index">
-        <img :src="image.src" :alt="image.alt" class="w-[855px]" />
+    <!-- LAPTOP -->
+    <div v-else class="flex flex-col gap-y-[97px]">
+      <!-- Top row slider -->
+      <div
+        class="flex gap-x-[68px]"
+        :style="{ transform: `translateX(${topRowTranslate}px)` }"
+      >
+        <template
+          v-for="(image, index) in infiniteTopRowImages"
+          :key="index"
+          class="sliderShadow h-[385px]"
+        >
+          <img :src="image.src" :alt="image.alt" class="w-[650px]" />
+        </template>
+      </div>
+
+      <!-- Bottom row slider -->
+      <div
+        class="flex gap-x-[68px]"
+        :style="{ transform: `translateX(${bottomRowTranslate}px)` }"
+      >
+        <template
+          v-for="(image, index) in infiniteBottomRowImages"
+          :key="index"
+          class="sliderShadow h-[383px]"
+        >
+          <img :src="image.src" :alt="image.alt" class="w-[650px]" />
+        </template>
       </div>
     </div>
   </div>
@@ -26,13 +51,14 @@
 const props = defineProps({
   topRowImages: Array,
   bottomRowImages: Array,
+  mobileImages: Array,
 });
 
 // 'ref' bruges til at lave en reaktiv variabel 'isMobile', der som udgangspunkt er falsk.
 const isMobile = ref(false);
+
 // 'onMounted' hooket bruges til køre en funktion, når komponentet er blev sat ind.
 // Funktionen kontrollerer vinduets bredde. Hvis bredden er mindre end 768 pixels, så opdateres 'isMobile' til sand.
-
 onMounted(() => {
   if (window.innerWidth < 768) {
     isMobile.value = true;
@@ -45,10 +71,10 @@ const bottomRowTranslate = ref(0);
 // Initialize bottomRowTranslate to start from the back of the bottomRowImages array
 onMounted(() => {
   // Calculate the total width of the images in the bottom row
-  const totalWidth = props.bottomRowImages.length * 855; // Assuming each image width is 855px
+  const totalWidth = props.bottomRowImages.length * 650; // Assuming each image width is 855px
 
   // Set bottomRowTranslate to position the last image at the start of the viewport
-  bottomRowTranslate.value = -totalWidth + window.innerWidth;
+  bottomRowTranslate.value = -totalWidth + window.innerWidth / 2;
 });
 
 let lastScrollPosition = 0;
@@ -69,6 +95,22 @@ const handleScroll = () => {
 
   lastScrollPosition = currentScrollPosition;
 };
+
+const getInfiniteImages = (images) => {
+  if (!images || images.length === 0) return [];
+  const repeatCount = Math.ceil(window.innerWidth / 650) + 1;
+  return Array.from({ length: repeatCount }, () => images).flat();
+};
+
+// Anvend funktionen til at oprette det beregnede felt for topRowImages
+const infiniteTopRowImages = computed(() =>
+  getInfiniteImages(props.topRowImages)
+);
+
+// Anvend funktionen til at oprette det beregnede felt for bottomRowImages
+const infiniteBottomRowImages = computed(() =>
+  getInfiniteImages(props.bottomRowImages)
+);
 
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);

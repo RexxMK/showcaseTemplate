@@ -3,12 +3,8 @@
     <!-- MOBIL -->
     <div v-if="isMobile">
       <div class="flex flex-col items-center gap-y-[84px]">
-        <div
-          v-for="(image, index) in mobileImages"
-          :key="index"
-          class="w-[330px] h-auto"
-        >
-          <img :src="image.src" :alt="image.alt" />
+        <div v-for="(image, index) in mobileImages" :key="index">
+          <img :src="image.src" :alt="image.alt" class="w-[330px]" />
         </div>
       </div>
     </div>
