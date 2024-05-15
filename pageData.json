@@ -1,4 +1,36 @@
 {
+  "index": {
+    "overview": {
+      "title": "showcase sites",
+      "teaser": "award submissions",
+      "showcases": [
+        {
+          "project": "not to scale",
+          "image": {
+            "src": "./images/notToScale/ntsLink.png",
+            "alt": "not to scale showcase site"
+          },
+
+          "cta": {
+            "url": "/nottoscale",
+            "name": "view showcase"
+          }
+        },
+        {
+          "project": "after august",
+          "image": {
+            "src": "./images/afterAugust/aaLink.png",
+            "alt": "after august showcase site"
+          },
+
+          "cta": {
+            "url": "/afteraugust",
+            "name": "view showcase"
+          }
+        }
+      ]
+    }
+  },
   "notToScale": {
     "hero": {
       "title": "Not to Scale",

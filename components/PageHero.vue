@@ -15,11 +15,11 @@
     <div class="c-page-hero_content flex flex-col items-center">
       <!-- MOBIL -->
       <div v-if="isMobile" class="flex flex-col items-center pt-[99px]">
-        <div v-if="title" class="text-[40px]">{{ title }}</div>
+        <div v-if="title" class="header-sm">{{ title }}</div>
         <div class="flex justify-center">
           <div
             v-if="teaser"
-            class="text-[20px] text-center pt-[36px] pb-[105px]"
+            class="body-sm text-center pt-[36px] pb-[105px]"
             :class="teaserMaxWidth"
           >
             {{ teaser }}
@@ -29,11 +29,11 @@
 
       <!-- LAPTOP -->
       <div v-else class="pt-[206px]">
-        <div v-if="title" class="header-lg text-[110px]">{{ title }}</div>
+        <div v-if="title" class="header-lg">{{ title }}</div>
         <div class="flex justify-center">
           <div
             v-if="teaser"
-            class="body-lg text-[28px] text-center pt-[18px] pb-[62px]"
+            class="body-lg text-center pt-[18px] pb-[62px]"
             :class="teaserMaxWidth"
           >
             {{ teaser }}
@@ -44,7 +44,7 @@
       <!-- KNAP -->
       <button
         v-if="cta"
-        class="w-[213px] h[48px] rounded-50 uppercase text-[16px] cursor-pointer bg-detail text-detail-text"
+        class="w-[213px] h-[48px] rounded-50 uppercase text-[16px] cursor-pointer bg-detail text-detail-text"
         @click="openUrlInNewTab"
       >
         {{ cta.name }}

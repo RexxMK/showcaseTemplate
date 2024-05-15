@@ -1,3 +1,12 @@
+.overview {
+  --primary: rgb(242, 236, 228);
+  --secondary: rgb(64, 61, 57);
+  --primary-variant: rgb(242, 218, 172);
+  --secondary-variant: rgb(191, 174, 159);
+  --detail: rgb(64, 61, 57);
+  --detail-text: rgb(242, 236, 228);
+}
+
 .notToScale {
   --primary: rgb(244, 240, 232);
   --secondary: rgb(55, 46, 57);
@@ -8,11 +17,23 @@
 
   /* FONT */
   .header-lg {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Poppins, sans-serif;
+    font-size: 110px;
+  }
+
+  .header-sm {
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
   }
 
   .body-lg {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Poppins, sans-serif;
+    font-size: 28px;
+  }
+
+  .body-sm {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
   }
 }
 
@@ -25,11 +46,23 @@
 
   /* FONT */
   .header-lg {
-    font-family: Helvetica neue, sans-serif;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 110px;
   }
 
   .body-lg {
-    font-family: Helvetica neue, sans-serif;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 28px;
+  }
+
+  .header-sm {
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 40px;
+  }
+
+  .body-sm {
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 20px;
   }
 }
 

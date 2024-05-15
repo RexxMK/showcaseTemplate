@@ -35,7 +35,7 @@ import ImageSlider from "../components/ImageSlider.vue";
 
 const page = ref(pageData.notToScale);
 
-const teaserMaxWidth = ref("max-w-24ch");
+const teaserMaxWidth = ref("max-w-23ch");
 
 // 'ref' bruges til at lave en reaktiv variabel 'isMobile', der som udgangspunkt er falsk.
 // const isMobile = ref(false);
