@@ -80,16 +80,19 @@ onMounted(() => {
 
 let lastScrollPosition = 0;
 
+// Funktionen registrerer den aktuelle scroll position og sammenligner den med den foregående scroll position.
+// Når man scroller op eller ned på siden opdaterer funktionen positionen for billederne i slideren med en offset på 4px.
+// Resultatet af dette er en glidende effekt for billederne i slideren, når man scroller på siden.
 const handleScroll = () => {
   const currentScrollPosition =
     window.scrollY || document.documentElement.scrollTop;
 
   if (currentScrollPosition > lastScrollPosition) {
-    // Scrolling down
+    // Scroller ned
     topRowTranslate.value -= 4;
     bottomRowTranslate.value += 4;
   } else {
-    // Scrolling up
+    // Scroller op
     topRowTranslate.value += 4;
     bottomRowTranslate.value -= 4;
   }
@@ -97,8 +100,13 @@ const handleScroll = () => {
   lastScrollPosition = currentScrollPosition;
 };
 
+// Denne funktion tager et billedearray som input og genererer et nyt array, hvor billederne gentages for at skabe en uendelig scrolleffekt.
 const getInfiniteImages = (images) => {
+  // Funktionen tjekker, om det billedearray, der sendes til funktionen er tomt.
+  // Hvis det er tomt returneres et tomt array
   if (!images || images.length === 0) return [];
+
+  //
   const repeatCount = Math.ceil(window.innerWidth / 650) + 1;
   return Array.from({ length: repeatCount }, () => images).flat();
 };

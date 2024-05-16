@@ -30,7 +30,7 @@
     <div class="flex justify-center pt-[58px]">
       <button
         v-if="cta"
-        class="w-[213px] h[48px] rounded-50 uppercase text-[16px] cursor-pointer bg-detail text-detail-text"
+        class="caption-lg w-[213px] h[48px] rounded-50 cursor-pointer bg-detail text-detail-text"
         @click="toggleImages"
       >
         {{ buttonLabel }}
