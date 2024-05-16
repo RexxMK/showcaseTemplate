@@ -11,12 +11,18 @@
 
     <!-- LAPTOP -->
     <div v-else class="flex justify-center gap-x-[68px]">
-      <div class="flex flex-col gap-y-[97px]">
+      <div
+        ref="leftColumn"
+        class="flex flex-col gap-y-[97px] h-full sticky top-0"
+      >
         <div v-for="(image, index) in mobileImages" :key="index">
           <img :src="image.src" :alt="image.alt" class="w-[291px]" />
         </div>
       </div>
-      <div class="flex flex-col gap-y-[97px]">
+      <div
+        ref="rightColumn"
+        class="flex flex-col gap-y-[97px] h-full sticky top-0"
+      >
         <div v-for="(image, index) in laptopImages" :key="index">
           <img :src="image.src" :alt="image.alt" class="w-[1019px]" />
         </div>
@@ -40,4 +46,21 @@ onMounted(() => {
     isMobile.value = true;
   }
 });
+
+// const leftColumn = ref(null);
+// const rightColumn = ref(null);
+
+// onMounted(() => {
+//   if (leftColumn.value && rightColumn.value) {
+//     setTimeout(() => {
+//       const leftColumnHeight = leftColumn.value.offsetHeight;
+//       const rightColumnHeight = rightColumn.value.offsetHeight;
+
+//       console.log("Left column height:", leftColumnHeight);
+//       console.log("Right column height:", rightColumnHeight);
+//     }, 500);
+//   } else {
+//     console.error("One or both columns are not found.");
+//   }
+// });
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="c-image-slider">
     <!-- MOBIL -->
-    <div v-if="isMobile">
+    <div v-if="isMobile" class="relative">
       <div class="flex gap-x-[16px] overflow-auto h-auto sliderShadow">
         <template v-for="(image, index) in mobileImages" :key="index">
           <img
@@ -11,7 +11,6 @@
           />
         </template>
       </div>
-      <div></div>
     </div>
 
     <!-- LAPTOP -->
@@ -52,6 +51,7 @@ const props = defineProps({
   topRowImages: Array,
   bottomRowImages: Array,
   mobileImages: Array,
+  caption: String,
 });
 
 // 'ref' bruges til at lave en reaktiv variabel 'isMobile', der som udgangspunkt er falsk.
@@ -65,6 +65,7 @@ onMounted(() => {
   }
 });
 
+// Styrer billedernes position i slideren
 const topRowTranslate = ref(0);
 const bottomRowTranslate = ref(0);
 

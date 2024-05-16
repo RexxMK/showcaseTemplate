@@ -21,13 +21,10 @@
       <ImageGallery v-bind="{ ...page.imageGallery }" :sliceAmount="3" />
       <VideoBorder v-bind="{ ...page.borderVideo.outro }" />
     </div>
-
-    <!-- {{ page }} -->
   </div>
 </template>
 
 <script setup>
-import { themes } from "@/assets/js/themes.js";
 import pageData from "/pageData.json";
 import PageHero from "../components/PageHero.vue";
 import ScrollGallery from "../components/ScrollGallery.vue";
@@ -37,7 +34,7 @@ const page = ref(pageData.afterAugust);
 
 const teaserMaxWidth = ref("max-w-27ch");
 
-// Koden i linje 44-53 indeholder den funktion der skal bruges i løsningen generelt.
+// Koden i linje 41-50 indeholder den funktion der skal bruges i løsningen generelt.
 // Jeg har valgt at bruge en anden funktion til at aflæse viewportstørrelsen af siden i forbindelse med hovedopgaven
 // På den måde sker skiftet til mobilvisningen automatisk uden der er behov for reload af siden
 

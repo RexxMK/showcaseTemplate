@@ -25,7 +25,6 @@
 </template>
 
 <script setup>
-import { themes } from "@/assets/js/themes.js";
 import pageData from "/pageData.json";
 import VideoStaggered from "../components/VideoStaggered.vue";
 import PageHero from "../components/PageHero.vue";
@@ -37,17 +36,7 @@ const page = ref(pageData.notToScale);
 
 const teaserMaxWidth = ref("max-w-23ch");
 
-// 'ref' bruges til at lave en reaktiv variabel 'isMobile', der som udgangspunkt er falsk.
-// const isMobile = ref(false);
-// // 'onMounted' hooket bruges til køre en funktion, når komponentet er blev sat ind.
-// // Funktionen kontrollerer vinduets bredde. Hvis bredden er mindre end 768 pixels, så opdateres 'isMobile' til sand.
-// onMounted(() => {
-//   if (window.innerWidth < 768) {
-//     isMobile.value = true;
-//   }
-// });
-
-// Koden i linje 54-63 indeholder den funktion der skal bruges i løsningen generelt.
+// Koden i linje 43-52 indeholder den funktion der skal bruges i løsningen generelt.
 // Jeg har valgt at bruge en anden funktion til at aflæse viewportstørrelsen af siden i forbindelse med hovedopgaven
 // På den måde sker skiftet til mobilvisningen automatisk uden der er behov for reload af siden
 

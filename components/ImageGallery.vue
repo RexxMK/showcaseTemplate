@@ -66,7 +66,7 @@ onMounted(() => {
 
 const isAllImagesVisible = ref(false);
 
-// Det resterende antal billeder og det viste antal billeder beregnes afhængigt af skærmstørrelsen og det aktuelle antal viste billeder ('sliceAmount').
+// Det resterende antal billeder og det viste antal billeder beregnes med afhængigt af skærmstørrelsen og det aktuelle antal viste billeder ('sliceAmount').
 const remainingAmount = computed(() => {
   if (isMobile.value) {
     return Math.max(0, props.mobileImages.length - sliceAmount.value);
