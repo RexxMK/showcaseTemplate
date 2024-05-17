@@ -106,17 +106,18 @@ const getInfiniteImages = (images) => {
   // Hvis det er tomt returneres et tomt array
   if (!images || images.length === 0) return [];
 
-  //
+  // Antallet af gentagelser beregnes ud fra vinduets bredde og bredden af billederne.
+  // 'Math.ceil' sikrer at der altid tages højde for mindst en fuld gentagelse af billederne, selvom der kun er plads til en del af billedet.
   const repeatCount = Math.ceil(window.innerWidth / 650) + 1;
+
+  // Der oprettes et nyt array af længden 'repeatCount', hvor hvert element i det nye array er en kopi af 'images'.
   return Array.from({ length: repeatCount }, () => images).flat();
 };
 
-// Anvend funktionen til at oprette det beregnede felt for topRowImages
 const infiniteTopRowImages = computed(() =>
   getInfiniteImages(props.topRowImages)
 );
 
-// Anvend funktionen til at oprette det beregnede felt for bottomRowImages
 const infiniteBottomRowImages = computed(() =>
   getInfiniteImages(props.bottomRowImages)
 );
@@ -125,7 +126,6 @@ onMounted(() => {
   window.addEventListener("scroll", handleScroll);
 });
 
-// Clean up event listener when component is unmounted
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
