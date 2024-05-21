@@ -19,8 +19,6 @@
       <ImageSlider v-bind="{ ...page.imageSlider }" />
       <ImageLong v-bind="{ ...page.longImage }" />
     </div>
-
-    <!-- {{ page }} -->
   </div>
 </template>
 
@@ -36,7 +34,7 @@ const page = ref(pageData.notToScale);
 
 const teaserMaxWidth = ref("max-w-23ch");
 
-// Koden i linje 43-52 indeholder den funktion der skal bruges i løsningen generelt.
+// Koden i linje 41-50 indeholder den funktion der skal bruges i løsningen generelt.
 // Jeg har valgt at bruge en anden funktion til at aflæse viewportstørrelsen af siden i forbindelse med hovedopgaven
 // På den måde sker skiftet til mobilvisningen automatisk uden der er behov for reload af siden
 
