@@ -69,12 +69,12 @@ onMounted(() => {
 const topRowTranslate = ref(0);
 const bottomRowTranslate = ref(0);
 
-// Initialize bottomRowTranslate to start from the back of the bottomRowImages array
+// Funktionen placerer det sidste billede i bottomRowImages arrayet ved starten af viewport
 onMounted(() => {
-  // Calculate the total width of the images in the bottom row
-  const totalWidth = props.bottomRowImages.length * 650; // Assuming each image width is 855px
+  // Den samlede bredde af alle billeder i den nederste slider beregnes ved at gange antallet af billeder med bredden af hvert billede.
+  const totalWidth = props.bottomRowImages.length * 650;
 
-  // Set bottomRowTranslate to position the last image at the start of the viewport
+  // Ved at trække 'totalWidth' fra og derefter tilføje halvdelen af viewport bredden, placeres det sidste billede i slideren ved starten af viewport.
   bottomRowTranslate.value = -totalWidth + window.innerWidth / 2;
 });
 

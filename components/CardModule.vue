@@ -9,7 +9,7 @@
     <!-- MOBIL -->
     <!-- Jeg bruger en if-sætning til at vise elementet på denne måde hvis 'isMobile' er sand. -->
     <div v-if="isMobile" class="flex flex-wrap gap-y-[49px] justify-center">
-      <!-- Venstre kort mobil -->
+      <!-- Venstre kort mobil (øverste) -->
       <div class="relative cursor-pointer">
         <div v-if="leftCard" class="w-[346px]" @click="toggleModule('left')">
           <img
@@ -27,7 +27,7 @@
         </div>
       </div>
 
-      <!-- Venstre modul -->
+      <!-- Venstre modul (øverste) -->
       <div class="z-5 mt-[206px] overflow-hidden sliderShadow">
         <div v-if="showLeftModule" class="w-full h-auto">
           <div class="flex gap-x-[13px] overflow-x-auto">
@@ -53,7 +53,7 @@
         </div>
       </div>
 
-      <!-- Højre kort -->
+      <!-- Højre kort (nederste) -->
       <div class="relative cursor-pointer">
         <div v-if="rightCard" class="w-[346px]" @click="toggleModule('right')">
           <img
@@ -71,7 +71,7 @@
         </div>
       </div>
 
-      <!-- Højre modul -->
+      <!-- Højre modul (nederste) -->
       <div class="z-5 mt-[206px] overflow-hidden sliderShadow">
         <div v-if="showRightModule" class="w-full h-auto">
           <div class="flex gap-x-[13px] overflow-x-auto">
@@ -132,7 +132,7 @@
           <!-- Venstre modul -->
           <div
             v-if="showLeftModule"
-            class="w-[1449px] h-[882px] bg-secondary-variant absolute overflow-y-auto rounded-10"
+            class="w-[1449px] h-[882px] bg-primary-variant absolute overflow-y-auto rounded-10"
           >
             <div class="flex flex-col items-center mt-[80px]">
               <div class="flex justify-center gap-x-[68px]">
@@ -172,7 +172,7 @@
           <!-- Højre modul -->
           <div
             v-if="showRightModule"
-            class="w-[1449px] h-[882px] bg-secondary-variant absolute overflow-y-auto rounded-10"
+            class="w-[1449px] h-[882px] bg-primary-variant absolute overflow-y-auto rounded-10"
           >
             <div class="flex flex-col items-center mt-[80px]">
               <div class="flex justify-center gap-x-[68px]">
@@ -275,7 +275,8 @@ const toggleModule = (side) => {
     if (showLeftModule.value && showRightModule.value) {
       showRightModule.value = false;
     }
-    // Rul kun hvis venstre modul er åbent
+    // Hvis 'showLeftModule' er 'true' vil siden ved hjælp af 'document.querySelector' finde elementet 'c-card-module'.
+    // Når/hvis elementet er fundet vil siden scrolle ned til elementet så det er indenfor viewport.
     if (showLeftModule.value) {
       elementToScrollTo = document.querySelector(".c-card-module");
     }
@@ -284,13 +285,14 @@ const toggleModule = (side) => {
     if (showRightModule.value && showLeftModule.value) {
       showLeftModule.value = false;
     }
-    // Rul kun hvis højre modul er åbent
+    // Hvis 'showRightModule' er 'true' vil siden ved hjælp af 'document.querySelector' finde elementet 'c-card-module'.
+    // Når/hvis elementet er fundet vil siden scrolle ned til elementet så det er indenfor viewport.
     if (showRightModule.value) {
       elementToScrollTo = document.querySelector(".c-card-module");
     }
   }
 
-  // Rul kun hvis elementet er defineret
+  // Scroller hvis elementet er defineret
   if (elementToScrollTo) {
     elementToScrollTo.scrollIntoView({ behavior: "smooth" });
   }

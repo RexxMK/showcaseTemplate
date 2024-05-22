@@ -47,6 +47,8 @@ onMounted(() => {
   }
 });
 
+// Nedenstående kode er del af en bedre og mere glat løsning til scroll i kolonnerne
+
 // const leftColumn = ref(null);
 // const rightColumn = ref(null);
 
