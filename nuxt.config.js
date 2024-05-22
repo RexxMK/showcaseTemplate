@@ -3,5 +3,4 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@unocss/nuxt"],
   css: ["~/assets/css/main.css"],
-  target: "static",
 });
