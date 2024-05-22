@@ -13,9 +13,19 @@
     font-size: 110px;
   }
 
+  .header-sm {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+  }
+
   .body-lg {
     font-family: "Times New Roman", Times, serif;
     font-size: 28px;
+  }
+
+  .body-sm {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
   }
 
   .caption-lg {
@@ -110,6 +120,7 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 *::-webkit-scrollbar {
