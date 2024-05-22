@@ -1,10 +1,10 @@
 const client_manifest = {
-  "_D4ueDy5D.js": {
+  "_CPAayiK0.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "D4ueDy5D.js",
+    "file": "CPAayiK0.js",
     "name": "vue.f36acd1f",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
@@ -26,12 +26,12 @@ const client_manifest = {
     "file": "DlAUqK2U.js",
     "name": "_plugin-vue_export-helper"
   },
-  "_O1jS-TbB.js": {
+  "_DlCw_FVi.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "O1jS-TbB.js",
+    "file": "DlCw_FVi.js",
     "name": "ScrollGallery",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
@@ -42,13 +42,13 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CBO1uZro.js",
+    "file": "yaWSurg5.js",
     "name": "error-404",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_D4ueDy5D.js",
+      "_CPAayiK0.js",
       "_DlAUqK2U.js"
     ],
     "css": [
@@ -66,12 +66,12 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "yYuwCDPN.js",
+    "file": "ercnDHjg.js",
     "name": "error-500",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_D4ueDy5D.js",
+      "_CPAayiK0.js",
       "_DlAUqK2U.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -90,7 +90,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "C4MlAiGu.js",
+    "file": "lzrRkVii.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -113,12 +113,12 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Ch9-EVJh.js",
+    "file": "Dhu0EzA_.js",
     "name": "AfterAugust",
     "src": "pages/AfterAugust.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_O1jS-TbB.js",
+      "_DlCw_FVi.js",
       "_DKepketX.js",
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -128,12 +128,12 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "C5ToewAv.js",
+    "file": "uQIrX_Ef.js",
     "name": "NotToScale",
     "src": "pages/NotToScale.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_O1jS-TbB.js",
+      "_DlCw_FVi.js",
       "node_modules/nuxt/dist/app/entry.js",
       "_DKepketX.js",
       "_DlAUqK2U.js"
@@ -153,7 +153,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "C3l92bsj.js",
+    "file": "C96vG9hn.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
