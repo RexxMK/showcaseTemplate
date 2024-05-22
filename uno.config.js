@@ -1,27 +1,4 @@
 // unocss.config.js
-// import { defineConfig } from "unocss";
-// import { themes } from "./assets/js/themes"; // Opdater stien til themes.js
-// import { useThemeConfiguration } from "./assets/js/themeConfiguration"; // Opdater stien efter din filstruktur
-
-// export default defineConfig(() => {
-//   const { theme } = useThemeConfiguration(); // Brug useThemeConfiguration for at få det aktuelle tema
-
-//   return {
-//     rules: {
-//       // Baggrundsfarve
-//       ".bg-primary": {
-//         background: "var(--primary)",
-//       },
-//       // Tekstfarve
-//       ".text-primary": {
-//         color: "var(--primary)",
-//       },
-//       // Tilføj flere regler efter behov
-//     },
-//   };
-// });
-
-// uno.config.ts
 import {
   defineConfig,
   presetAttributify,
