@@ -66,6 +66,18 @@ onMounted(() => {
 
 const isAllImagesVisible = ref(false);
 
+// Funktionen ændrer antallet af viste billeder, og skifter mellem at vise alle billeder eller kun et begrænset antal billeder, når der trykkes på knappen.
+const toggleImages = () => {
+  if (isAllImagesVisible.value) {
+    sliceAmount.value = props.sliceAmount;
+  } else {
+    sliceAmount.value = isMobile.value
+      ? props.mobileImages.length
+      : props.laptopImages.length;
+  }
+  isAllImagesVisible.value = !isAllImagesVisible.value;
+};
+
 // Det resterende antal billeder og det viste antal billeder beregnes afhængigt af skærmstørrelsen og det aktuelle antal viste billeder ('sliceAmount').
 // 'Math.max(0, ...)' bruges til at sikre, at værdien der returneres altid er mindst 0.
 // Det forhindrer også negative værdier, hvis 'sliceAmount' er større end antallet af billeder.
@@ -84,18 +96,6 @@ const shownAmount = computed(() => {
     return Math.max(0, props.laptopImages.length - props.sliceAmount);
   }
 });
-
-// Funktionen ændrer antallet af viste billeder, og skifter mellem at vise alle billeder eller kun et begrænset antal billeder, når der trykkes på knappen.
-const toggleImages = () => {
-  if (isAllImagesVisible.value) {
-    sliceAmount.value = props.sliceAmount;
-  } else {
-    sliceAmount.value = isMobile.value
-      ? props.mobileImages.length
-      : props.laptopImages.length;
-  }
-  isAllImagesVisible.value = !isAllImagesVisible.value;
-};
 
 // Jeg laver et label til knappen baseret på om alle billeder er synlige eller ej, samt hvor mange billeder der er tilbage eller vist.
 const buttonLabel = computed(() => {
