@@ -1,4 +1,4 @@
-import { version, unref, inject, defineComponent, provide, shallowReactive, h, ref, watch, Suspense, nextTick, Transition, createApp, effectScope, reactive, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, useSSRContext, hasInjectionContext, getCurrentInstance, toRef, defineAsyncComponent, mergeProps, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw } from 'file:///Users/rikke/Documents/GitHub/showcaseTemplate/node_modules/vue/index.mjs';
+import { version, unref, inject, defineComponent, provide, shallowReactive, h, ref, watch, Suspense, nextTick, Transition, useSSRContext, createApp, effectScope, reactive, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, hasInjectionContext, getCurrentInstance, toRef, defineAsyncComponent, mergeProps, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw } from 'file:///Users/rikke/Documents/GitHub/showcaseTemplate/node_modules/vue/index.mjs';
 import { $fetch } from 'file:///Users/rikke/Documents/GitHub/showcaseTemplate/node_modules/ofetch/dist/node.mjs';
 import { b as baseURL } from '../_/renderer.mjs';
 import { createHooks } from 'file:///Users/rikke/Documents/GitHub/showcaseTemplate/node_modules/hookable/dist/index.mjs';
@@ -6,7 +6,7 @@ import { getContext } from 'file:///Users/rikke/Documents/GitHub/showcaseTemplat
 import { sanitizeStatusCode, createError as createError$1 } from 'file:///Users/rikke/Documents/GitHub/showcaseTemplate/node_modules/h3/dist/index.mjs';
 import { getActiveHead } from 'file:///Users/rikke/Documents/GitHub/showcaseTemplate/node_modules/unhead/dist/index.mjs';
 import { defineHeadPlugin } from 'file:///Users/rikke/Documents/GitHub/showcaseTemplate/node_modules/@unhead/shared/dist/index.mjs';
-import { RouterView, useRoute as useRoute$1, createMemoryHistory, createRouter, START_LOCATION } from 'file:///Users/rikke/Documents/GitHub/showcaseTemplate/node_modules/vue-router/dist/vue-router.node.mjs';
+import { RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file:///Users/rikke/Documents/GitHub/showcaseTemplate/node_modules/vue-router/dist/vue-router.node.mjs';
 import { withQuery, hasProtocol, parseURL, isScriptProtocol, joinURL, isSamePath } from 'file:///Users/rikke/Documents/GitHub/showcaseTemplate/node_modules/ufo/dist/index.mjs';
 import { toRouteMatcher, createRouter as createRouter$1 } from 'file:///Users/rikke/Documents/GitHub/showcaseTemplate/node_modules/radix3/dist/index.mjs';
 import { defu } from 'file:///Users/rikke/Documents/GitHub/showcaseTemplate/node_modules/defu/dist/defu.mjs';
@@ -555,7 +555,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./AfterAugust-C7JkAjGk.mjs').then((m) => m.default || m)
+    component: () => import('./AfterAugust-T9CopwOf.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -563,7 +563,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-Sa336qPj.mjs').then((m) => m.default || m)
+    component: () => import('./index-Cvs3gOnr.mjs').then((m) => m.default || m)
   },
   {
     name: "NotToScale",
@@ -571,7 +571,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./NotToScale-Clh4hFQW.mjs').then((m) => m.default || m)
+    component: () => import('./NotToScale-CS43K8br.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1036,25 +1036,27 @@ function hasChildrenRoutes(fork, newRoute, Component) {
   });
   return index < newRoute.matched.length - 1;
 }
-const _sfc_main$2 = {
-  __name: "app",
-  __ssrInlineRender: true,
-  setup(__props) {
-    useRoute$1();
-    return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtPage = __nuxt_component_0;
-      _push(`<div${ssrRenderAttrs(_attrs)}>`);
-      _push(ssrRenderComponent(_component_NuxtPage, null, null, _parent));
-      _push(`</div>`);
-    };
+const _export_sfc = (sfc, props) => {
+  const target = sfc.__vccOpts || sfc;
+  for (const [key, val] of props) {
+    target[key] = val;
   }
+  return target;
 };
+const _sfc_main$2 = {};
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  const _component_NuxtPage = __nuxt_component_0;
+  _push(`<div${ssrRenderAttrs(_attrs)}>`);
+  _push(ssrRenderComponent(_component_NuxtPage, null, null, _parent));
+  _push(`</div>`);
+}
 const _sfc_setup$2 = _sfc_main$2.setup;
 _sfc_main$2.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
+const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender]]);
 const _sfc_main$1 = {
   __name: "nuxt-error-page",
   __ssrInlineRender: true,
@@ -1076,8 +1078,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-CLr_OCET.mjs').then((r) => r.default || r));
-    const _Error = defineAsyncComponent(() => import('./error-500-BVIYC6FM.mjs').then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-BSRSHGo-.mjs').then((r) => r.default || r));
+    const _Error = defineAsyncComponent(() => import('./error-500-Ct2FcPvi.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -1121,7 +1123,7 @@ const _sfc_main = {
           } else if (unref(SingleRenderer)) {
             ssrRenderVNode(_push, createVNode(resolveDynamicComponent(unref(SingleRenderer)), null, null), _parent);
           } else {
-            _push(ssrRenderComponent(unref(_sfc_main$2), null, null, _parent));
+            _push(ssrRenderComponent(unref(AppComponent), null, null, _parent));
           }
         },
         _: 1
@@ -1155,5 +1157,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { useRuntimeConfig as a, navigateTo as b, entry$1 as default, injectHead as i, nuxtLinkDefaults as n, resolveUnrefHeadInput as r, useRouter as u };
+export { _export_sfc as _, useRuntimeConfig as a, navigateTo as b, entry$1 as default, injectHead as i, nuxtLinkDefaults as n, resolveUnrefHeadInput as r, useRouter as u };
 //# sourceMappingURL=server.mjs.map

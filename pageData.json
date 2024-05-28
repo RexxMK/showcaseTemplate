@@ -12,7 +12,7 @@
           },
 
           "cta": {
-            "url": "/nottoscale",
+            "url": "/NotToScale/",
             "name": "view showcase"
           }
         },
@@ -24,7 +24,7 @@
           },
 
           "cta": {
-            "url": "/afteraugust",
+            "url": "/AfterAugust/",
             "name": "view showcase"
           }
         }
@@ -38,7 +38,7 @@
       "award": {
         "name": "Creative Circle 2024 Award Submission",
         "image": {
-          "src": "./svg/creativeCircle.svg",
+          "src": "../svg/creativeCircle.svg",
           "alt": "Creative Circle logo"
         }
       },
@@ -58,44 +58,44 @@
     "scrollGallery": {
       "laptopImages": [
         {
-          "src": "./images/notToScale/laptop/landingpage.png",
+          "src": "../images/notToScale/laptop/landingpage.png",
           "alt": "not to scale landingpage image with wobbly text"
         },
         {
-          "src": "./images/notToScale/laptop/deliverthewin.png",
+          "src": "../images/notToScale/laptop/deliverthewin.png",
           "alt": "deliver the win project in zoom gallery"
         }
       ],
       "mobileImages": [
         {
-          "src": "./images/notToScale/mobile/landingpage.png",
+          "src": "../images/notToScale/mobile/landingpage.png",
           "alt": "not to scale landingpage image with wobbly text"
         },
         {
-          "src": "./images/notToScale/mobile/deliverthewin.png",
+          "src": "../images/notToScale/mobile/deliverthewin.png",
           "alt": "deliver the win project in zoom gallery"
         }
       ]
     },
     "cardModule": {
       "leftCard": {
-        "src": "./images/notToScale/workCard.png",
+        "src": "../images/notToScale/workCard.png",
         "alt": "interactive card with image from the work page"
       },
       "leftModule": {
         "laptopImages": [
           {
-            "src": "./images/notToScale/laptop/workpage.png",
+            "src": "../images/notToScale/laptop/workpage.png",
             "alt": "screenshot from work page with wobbly text, filter buttons and two projects"
           }
         ],
         "mobileImages": [
           {
-            "src": "./images/notToScale/mobile/workpageM.png",
+            "src": "../images/notToScale/mobile/workpageM.png",
             "alt": "screenshot from work page with wobbly text and filter buttons"
           },
           {
-            "src": "./images/notToScale/mobile/searchM.png",
+            "src": "../images/notToScale/mobile/searchM.png",
             "alt": "screenshot of a search result with filter buttons and a project"
           }
         ],
@@ -107,23 +107,23 @@
         }
       },
       "rightCard": {
-        "src": "./images/notToScale/directorsCard.png",
+        "src": "../images/notToScale/directorsCard.png",
         "alt": "interactive card with image from the directors page"
       },
       "rightModule": {
         "laptopImages": [
           {
-            "src": "./images/notToScale/laptop/directorspage.png",
+            "src": "../images/notToScale/laptop/directorspage.png",
             "alt": "screenshot from directors page with wobbly text, filter buttons and a list of directors"
           }
         ],
         "mobileImages": [
           {
-            "src": "./images/notToScale/mobile/directorspageM.png",
+            "src": "../images/notToScale/mobile/directorspageM.png",
             "alt": "screenshot from directors page with wobbly text, filter buttons and a list of directors"
           },
           {
-            "src": "./images/notToScale/mobile/directorsfilterM.png",
+            "src": "../images/notToScale/mobile/directorsfilterM.png",
             "alt": "screenshot from directors page with wobbly text, an active filter button and a list of directors"
           }
         ],
@@ -138,68 +138,83 @@
     "imageSlider": {
       "topRowImages": [
         {
-          "src": "./images/notToScale/adultswim.png",
+          "src": "../images/notToScale/adultswim.png",
           "alt": "adult swim id project"
         },
-        { "src": "./images/notToScale/trade.png", "alt": "trade on project" },
         {
-          "src": "./images/notToScale/anniversary.png",
+          "src": "../images/notToScale/trade.png",
+          "alt": "trade on project"
+        },
+        {
+          "src": "../images/notToScale/anniversary.png",
           "alt": "50th anniversary project"
         },
-        { "src": "./images/notToScale/sushi.png", "alt": "sushi scene project" }
+        {
+          "src": "../images/notToScale/sushi.png",
+          "alt": "sushi scene project"
+        }
       ],
       "bottomRowImages": [
         {
-          "src": "./images/notToScale/dating.png",
+          "src": "../images/notToScale/dating.png",
           "alt": "dating with depth projects"
         },
         {
-          "src": "./images/notToScale/trail.png",
+          "src": "../images/notToScale/trail.png",
           "alt": "trailblazer project"
         },
         {
-          "src": "./images/notToScale/cheese.png",
+          "src": "../images/notToScale/cheese.png",
           "alt": "cheeseplosion project"
         },
         {
-          "src": "./images/notToScale/deliver.png",
+          "src": "../images/notToScale/deliver.png",
           "alt": "deliver the win project"
         },
-        { "src": "./images/notToScale/mukbang.png", "alt": "mukbang project" }
+        {
+          "src": "../images/notToScale/mukbang.png",
+          "alt": "mukbang project"
+        }
       ]
     },
     "imageGallery": {
       "mobileImages": [
         {
-          "src": "./images/notToScale/adultswim.png",
+          "src": "../images/notToScale/adultswim.png",
           "alt": "adult swim id project"
         },
-        { "src": "./images/notToScale/trade.png", "alt": "trade on project" },
         {
-          "src": "./images/notToScale/anniversary.png",
+          "src": "../images/notToScale/trade.png",
+          "alt": "trade on project"
+        },
+        {
+          "src": "../images/notToScale/anniversary.png",
           "alt": "50th anniversary project"
         },
         {
-          "src": "./images/notToScale/trail.png",
+          "src": "../images/notToScale/trail.png",
           "alt": "trailblazer project"
         },
         {
-          "src": "./images/notToScale/cheese.png",
+          "src": "../images/notToScale/cheese.png",
           "alt": "cheeseplosion project"
         },
         {
-          "src": "./images/notToScale/deliver.png",
+          "src": "../images/notToScale/deliver.png",
           "alt": "deliver the win project"
         },
         {
-          "src": "./images/notToScale/sushi.png",
+          "src": "../images/notToScale/sushi.png",
           "alt": "sushi scene project"
         },
         {
-          "src": "./images/notToScale/dating.png",
+          "src": "../images/notToScale/dating.png",
           "alt": "dating with depth projects"
         },
-        { "src": "./images/notToScale/mukbang.png", "alt": "mukbang project" }
+        {
+          "src": "../images/notToScale/mukbang.png",
+          "alt": "mukbang project"
+        }
       ],
       "laptopImages": [],
       "cta": {
@@ -209,11 +224,11 @@
     },
     "longImage": {
       "laptop": {
-        "src": "./images/notToScale/laptop/longImage.png",
+        "src": "../images/notToScale/laptop/longImage.png",
         "alt": "long screenshot of deliver the win project site"
       },
       "mobile": {
-        "src": "./images/notToScale/mobile/longImage.png",
+        "src": "../images/notToScale/mobile/longImage.png",
         "alt": "long screenshot of deliver the win project site"
       }
     }
@@ -226,8 +241,8 @@
       "award": {
         "name": "The Webby Awards 2023 Award submission",
         "image": {
-          "src": "./svg/webby.svg",
-          "alt": "the webbe awards logo"
+          "src": "../svg/webby.svg",
+          "alt": "the webby awards logo"
         }
       },
       "cta": {
@@ -264,79 +279,79 @@
     "imageSlider": {
       "topRowImages": [
         {
-          "src": "./images/afterAugust/womanOne.png",
+          "src": "../images/afterAugust/womanOne.png",
           "alt": "image of afghan woman"
         },
         {
-          "src": "./images/afterAugust/womanTwo.png",
+          "src": "../images/afterAugust/womanTwo.png",
           "alt": "image of afghan woman"
         },
         {
-          "src": "./images/afterAugust/womanThree.png",
+          "src": "../images/afterAugust/womanThree.png",
           "alt": "image of afghan woman"
         },
         {
-          "src": "./images/afterAugust/womanFour.png",
+          "src": "../images/afterAugust/womanFour.png",
           "alt": "image of afghan woman"
         }
       ],
       "bottomRowImages": [
         {
-          "src": "./images/afterAugust/womanFive.png",
+          "src": "../images/afterAugust/womanFive.png",
           "alt": "image of afghan woman"
         },
         {
-          "src": "./images/afterAugust/womanSix.png",
+          "src": "../images/afterAugust/womanSix.png",
           "alt": "image of afghan woman"
         },
         {
-          "src": "./images/afterAugust/womanSeven.png",
+          "src": "../images/afterAugust/womanSeven.png",
           "alt": "image of afghan woman"
         },
         {
-          "src": "./images/afterAugust/womanEight.png",
+          "src": "../images/afterAugust/womanEight.png",
           "alt": "image of afghan woman"
         },
         {
-          "src": "./images/afterAugust/womanNine.png",
+          "src": "../images/afterAugust/womanNine.png",
           "alt": "image of afghan woman"
         }
       ],
       "mobileImages": [
         {
-          "src": "./images/afterAugust/womanOne.png",
+          "src": "../images/afterAugust/womanOne.png",
           "alt": "image of afghan woman"
         },
         {
-          "src": "./images/afterAugust/womanTwo.png",
+          "src": "../images/afterAugust/womanTwo.png",
           "alt": "image of afghan woman"
         },
         {
-          "src": "./images/afterAugust/womanThree.png",
+          "src": "../images/afterAugust/womanThree.png",
           "alt": "image of afghan woman"
         },
         {
-          "src": "./images/afterAugust/womanFour.png",
+          "src": "../images/afterAugust/womanFour.png",
           "alt": "image of afghan woman"
         },
         {
-          "src": "./images/afterAugust/womanFive.png",
+          "src": "../images/afterAugust/womanFive.png",
           "alt": "image of afghan woman"
         },
         {
-          "src": "./images/afterAugust/womanSix.png",
+          "src": "../images/afterAugust/womanSix.png",
           "alt": "image of afghan woman"
         },
         {
-          "src": "./images/afterAugust/womanSeven.png",
+          "src": "../images/afterAugust/womanSeven.png",
           "alt": "image of afghan woman"
         },
         {
-          "src": "./images/afterAugust/womanEight.png",
+          "src": "../images/afterAugust/womanEight.png",
           "alt": "image of afghan woman"
         },
         {
-          "src": "./images/afterAugust/womanNine.png",
+          "src": "../images/afterAugust/womanNine.png",
           "alt": "image of afghan woman"
         }
       ]
@@ -344,33 +359,33 @@
     "scrollGallery": {
       "laptopImages": [
         {
-          "src": "./images/afterAugust/laptop/scrollOne.png",
+          "src": "../images/afterAugust/laptop/scrollOne.png",
           "alt": "screenshot from story page with a quote and an image of an afghan woman"
         },
         {
-          "src": "./images/afterAugust/laptop/scrollTwo.png",
+          "src": "../images/afterAugust/laptop/scrollTwo.png",
           "alt": "screenshot of language translation"
         },
         {
-          "src": "./images/afterAugust/laptop/scrollThree.png",
+          "src": "../images/afterAugust/laptop/scrollThree.png",
           "alt": "image of afghan women"
         }
       ],
       "mobileImages": [
         {
-          "src": "./images/afterAugust/mobile/scrollOne.png",
+          "src": "../images/afterAugust/mobile/scrollOne.png",
           "alt": "screenshot from story page with a quote and an image of an afghan woman"
         },
         {
-          "src": "./images/afterAugust/mobile/scrollTwo.png",
+          "src": "../images/afterAugust/mobile/scrollTwo.png",
           "alt": "screenshot of a floating scroll gallery with images of an afghan women"
         },
         {
-          "src": "./images/afterAugust/mobile/scrollThree.png",
+          "src": "../images/afterAugust/mobile/scrollThree.png",
           "alt": "screenshot from story page with a quote and an image of an afghan woman"
         },
         {
-          "src": "./images/afterAugust/mobile/scrollFour.png",
+          "src": "../images/afterAugust/mobile/scrollFour.png",
           "alt": "screenshot from story page with a quote and an image of an afghan woman"
         }
       ]
@@ -378,53 +393,53 @@
     "imageGallery": {
       "laptopImages": [
         {
-          "src": "./images/afterAugust/quoteOne.png",
+          "src": "../images/afterAugust/quoteOne.png",
           "alt": "top image of afghan woman, bottom image quote"
         },
         {
-          "src": "./images/afterAugust/quoteTwo.png",
+          "src": "../images/afterAugust/quoteTwo.png",
           "alt": "top image of afghan woman, bottom image quote"
         },
         {
-          "src": "./images/afterAugust/quoteThree.png",
+          "src": "../images/afterAugust/quoteThree.png",
           "alt": "top image of afghan woman, bottom image quote"
         },
         {
-          "src": "./images/afterAugust/quoteFour.png",
+          "src": "../images/afterAugust/quoteFour.png",
           "alt": "top image of afghan woman, bottom image quote"
         },
         {
-          "src": "./images/afterAugust/quoteFive.png",
+          "src": "../images/afterAugust/quoteFive.png",
           "alt": "top image of afghan woman, bottom image quote"
         },
         {
-          "src": "./images/afterAugust/quoteSix.png",
+          "src": "../images/afterAugust/quoteSix.png",
           "alt": "top image of afghan woman, bottom image quote"
         }
       ],
       "mobileImages": [
         {
-          "src": "./images/afterAugust/quoteOne.png",
+          "src": "../images/afterAugust/quoteOne.png",
           "alt": "top image of afghan woman, bottom image quote"
         },
         {
-          "src": "./images/afterAugust/quoteTwo.png",
+          "src": "../images/afterAugust/quoteTwo.png",
           "alt": "top image of afghan woman, bottom image quote"
         },
         {
-          "src": "./images/afterAugust/quoteThree.png",
+          "src": "../images/afterAugust/quoteThree.png",
           "alt": "top image of afghan woman, bottom image quote"
         },
         {
-          "src": "./images/afterAugust/quoteFour.png",
+          "src": "../images/afterAugust/quoteFour.png",
           "alt": "top image of afghan woman, bottom image quote"
         },
         {
-          "src": "./images/afterAugust/quoteFive.png",
+          "src": "../images/afterAugust/quoteFive.png",
           "alt": "top image of afghan woman, bottom image quote"
         },
         {
-          "src": "./images/afterAugust/quoteSix.png",
+          "src": "../images/afterAugust/quoteSix.png",
           "alt": "top image of afghan woman, bottom image quote"
         }
       ],

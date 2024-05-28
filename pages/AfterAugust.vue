@@ -34,25 +34,13 @@ const page = ref(pageData.afterAugust);
 
 const teaserMaxWidth = ref("max-w-27ch");
 
-// Koden i linje 41-50 indeholder den funktion der skal bruges i løsningen generelt.
-// Jeg har valgt at bruge en anden funktion til at aflæse viewportstørrelsen af siden i forbindelse med hovedopgaven
-// På den måde sker skiftet til mobilvisningen automatisk uden der er behov for reload af siden
-
 // 'ref' bruges til at lave en reaktiv variabel 'isMobile', der som udgangspunkt er falsk.
-// const isMobile = ref(false);
-
-// 'onMounted' hooket bruges til køre en funktion, når komponentet er blev sat ind.
-// Funktionen kontrollerer vinduets bredde. Hvis bredden er mindre end 768 pixels, så opdateres 'isMobile' til sand.
-// onMounted(() => {
-//   if (window.innerWidth < 768) {
-//     isMobile.value = true;
-//   }
-// });
-
 const isMobile = ref(false);
 
+// Funktionen updateIsMobile ser på bredden (clientWidth) af den synlige del af HTML-dokumentet.
+// Hvis bredden er under 768 pixels, betragtes det som en mobilskærm, og 'isMobile' opdateres til sand.
 const updateIsMobile = () => {
-  isMobile.value = window.innerWidth < 768;
+  isMobile.value = document.documentElement.clientWidth < 768;
 };
 
 onMounted(() => {

@@ -56,12 +56,16 @@ const sliceAmount = ref(props.sliceAmount);
 
 // 'ref' bruges til at lave en reaktiv variabel 'isMobile', der som udgangspunkt er falsk.
 const isMobile = ref(false);
-// 'onMounted' hooket bruges til køre en funktion, når komponentet er blev sat ind.
-// Funktionen kontrollerer vinduets bredde. Hvis bredden er mindre end 768 pixels, så opdateres 'isMobile' til sand.
+
+// Funktionen updateIsMobile ser på bredden (clientWidth) af den synlige del af HTML-dokumentet.
+// Hvis bredden er under 768 pixels, betragtes det som en mobilskærm, og 'isMobile' opdateres til sand.
+const updateIsMobile = () => {
+  isMobile.value = document.documentElement.clientWidth < 768;
+};
+
 onMounted(() => {
-  if (window.innerWidth < 768) {
-    isMobile.value = true;
-  }
+  updateIsMobile(); // Opdaterer ved start, baseret på vinduets bredde
+  window.addEventListener("resize", updateIsMobile); // Lytter efter vinduesændringer
 });
 
 const isAllImagesVisible = ref(false);

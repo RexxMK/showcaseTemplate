@@ -81,6 +81,8 @@
   /* COLORS */
   --primary: rgb(255, 255, 255);
   --secondary: rgb(18, 18, 18);
+  --primary-variant: rgb(207, 228, 191);
+  --secondary-variant: rgb(69, 68, 68);
   --detail: rgb(85, 180, 104);
   --detail-text: rgb(18, 18, 18);
 
@@ -90,14 +92,14 @@
     font-size: 110px;
   }
 
-  .body-lg {
-    font-family: Helvetica Neue, sans-serif;
-    font-size: 28px;
-  }
-
   .header-sm {
     font-family: Helvetica Neue, sans-serif;
     font-size: 40px;
+  }
+
+  .body-lg {
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 28px;
   }
 
   .body-sm {
